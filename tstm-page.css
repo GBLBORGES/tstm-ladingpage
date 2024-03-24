@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Maven';
+    src: url('path/to/Maven-Regular.ttf') format('truetype'); 
+}
+
+
+
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Maven', sans-serif;
+    color: #000000;
+    background-color: antiquewhite;
+}
+
+header {    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;   
+    padding: 10px 0; 
+    z-index: 1000;   
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 3px;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+#links a {
+       
+}
+
+#links a:hover {
+    color: white;
+}
+
+#socials{
+    text-decoration: none;
+}
+
+#logo img {
+    max-width: 120px;
+    height: 120px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #socials li {
+        display: inline;
+    }
+}
